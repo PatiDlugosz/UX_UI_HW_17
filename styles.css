@@ -1,0 +1,268 @@
+html {
+    font-size: 16px; 
+  }
+  
+  body {
+    background-color: #F8F8F8;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 28px;
+    margin: 0 160px;
+    padding-top: 30px; 
+  }
+  
+  .col-1 {
+    grid-column: span 1; 
+  }
+  
+  .col-2 {
+    grid-column: span 2; 
+  }
+  
+  .col-3 {
+    grid-column: span 3; 
+  }
+  
+  .col-4 {
+    grid-column: span 4; 
+  }
+  
+  .col-5 {
+    grid-column: span 5; 
+  }
+  
+  .col-6 {
+    grid-column: span 6; 
+  }
+  
+  .col-7 {
+    grid-column: span 7; 
+  }
+  
+  .col-8 {
+    grid-column: span 8; 
+  }
+  
+  .col-9 {
+    grid-column: span 9; 
+  }
+  .col-10 {
+    grid-column: span 10; 
+  }
+  .col-11 {
+    grid-column: span 11; 
+  }
+  
+  .col-12 {
+    grid-column: span 12; 
+  }
+  
+  .pos-relative {
+    position: relative;
+  }
+  
+  .pos-absolute {
+    position: absolute;
+  }
+  
+  /* Typography Styles */
+  h1 {
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+    font-size: 5.625rem; /* Equivalent to 90px */
+    margin: 0;
+  }
+  
+  h2 {
+    font-weight: 300; /* Book weight */
+    font-size: 3.75rem; /* Equivalent to 60px */
+    text-transform: uppercase; 
+    margin: 0;
+  }
+  
+  h3 {
+    font-weight: 500; /* Medium weight */
+    font-size: 2.1rem; /* Equivalent to 28px */
+    margin: 0;
+  }
+  
+  .bodycopy-large {
+    font-weight: 300; /* Book weight */
+    font-size: 2.8rem; /* Equivalent to 46px */
+    margin: 0;
+  }
+  
+  .bodycopy-default {
+    font-weight: 0; /* Book weight */
+    font-size: 1.5rem; /* Equivalent to 22px */
+    margin: 0;
+  }
+  
+  .bodycopy-small {
+    font-weight: 700; /* Bold weight */
+    font-size: 1.125rem; /* Equivalent to 18px */
+    margin: 0;
+    margin-top: 20px; 
+  }
+  
+  .intro {
+    grid-column: span 8;
+    padding-top: 5rem; 
+  }
+  
+  .firstparagraph {
+    grid-column: span 8;
+    padding-top: 2rem; 
+  }
+  
+  .navbar {
+    grid-column: span 12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1.875rem; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem; 
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.375rem; /* Equivalent to 22px */
+    transform: scale(1.2, 1.2);
+    transition: transform 0.2s ease;
+  }
+  
+  a:hover {
+      color: #4A4A4A;
+      text-decoration: none;
+  }
+  
+  .active {
+      color: #0047FF
+  }
+  
+  button {
+      background-color:#0047FF;
+      border: none;
+      font-family: "itc-avant-garde-gothic-pro", sans-serif;
+      color: white;
+      padding: 28px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.5rem;
+      border-radius: 16px;
+      margin-top: 60px;
+  }
+  
+  button:hover {
+      color: white;
+      background-color: #205EFF;
+  }
+  
+  button:active {
+      color: white;
+      background-color: #0144F1;
+  }
+  
+  .spinner {
+    position: absolute;
+    top: 33.75rem; /* Equivalent to 540px */
+    right: -273px; 
+    width: 546px;
+    height: 552px;
+    animation: spin 20s linear infinite;
+    transition: animation-duration 0.5s ease;
+  }
+  
+  .spinner:hover {
+  animation-duration: 5s;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .footer-text {
+      color:#0047FF !important;
+  }
+  
+  footer {
+      background-color: white;
+      margin-top: 120px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .contact-details {
+      list-style-type: none;
+      padding-left: 150px;
+  }
+  
+  .line-height {
+      line-height: 4;
+  }
+  
+  .socials {
+      width: 31px;
+      height: 31px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 28px;
+      flex-direction: row;
+      margin-left: auto;
+  
+  }
+  .socials-icon {
+      width: 31px;
+      height: 31px;
+      padding-top: 20px;
+  }
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    html {
+        font-size: 14px; 
+    }
+  
+    img {
+        top: 33.75rem; 
+        right: -50%; 
+        width: 50%; 
+        height: auto; 
+    }
+    }
+  
+  @media (max-width: 480px) {
+    html {
+        font-size: 12px; 
+    }
+  
+    img {
+        top: 33.75rem; 
+        right: -50%; 
+        width: 50%; 
+        height: auto; 
+    }
+  
+   
+  }
+  
